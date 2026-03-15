@@ -1,0 +1,216 @@
+<!DOCTYPE html>
+<html>
+<head>
+<title>Animal Adaptation & Migration Quiz</title>
+<style>
+body{font-family:Arial;background:#f2f2f2;padding:20px;}
+.quiz{background:white;padding:20px;border-radius:10px;max-width:750px;margin:auto;}
+.correct{color:green;font-weight:bold;}
+.wrong{color:red;font-weight:bold;}
+button{padding:10px 20px;font-size:16px;margin-top:15px;}
+</style>
+</head>
+<body>
+
+<div class="quiz">
+<h2>Class 5 – Adaptation & Migration Quiz</h2>
+
+<form id="quizForm">
+
+<p>1. Adaptation means:</p>
+<label><input type="radio" name="q1" value="A"> Fighting</label><br>
+<label><input type="radio" name="q1" value="B"> Special features that help animals live in their habitat</label><br>
+<label><input type="radio" name="q1" value="C"> Sleeping</label><br>
+<label><input type="radio" name="q1" value="D"> Running</label>
+<p id="r1"></p>
+
+<p>2. Which animal can change its color to hide?</p>
+<label><input type="radio" name="q2" value="A"> Horse</label><br>
+<label><input type="radio" name="q2" value="B"> Chameleon</label><br>
+<label><input type="radio" name="q2" value="C"> Goat</label><br>
+<label><input type="radio" name="q2" value="D"> Cow</label>
+<p id="r2"></p>
+
+<p>3. Which animal has very strong smell power?</p>
+<label><input type="radio" name="q3" value="A"> Dog</label><br>
+<label><input type="radio" name="q3" value="B"> Fish</label><br>
+<label><input type="radio" name="q3" value="C"> Elephant</label><br>
+<label><input type="radio" name="q3" value="D"> Monkey</label>
+<p id="r3"></p>
+
+<p>4. Which bird can see very far from the sky?</p>
+<label><input type="radio" name="q4" value="A"> Parrot</label><br>
+<label><input type="radio" name="q4" value="B"> Crow</label><br>
+<label><input type="radio" name="q4" value="C"> Eagle</label><br>
+<label><input type="radio" name="q4" value="D"> Pigeon</label>
+<p id="r4"></p>
+
+<p>5. Which animal has a long trunk?</p>
+<label><input type="radio" name="q5" value="A"> Lion</label><br>
+<label><input type="radio" name="q5" value="B"> Elephant</label><br>
+<label><input type="radio" name="q5" value="C"> Tiger</label><br>
+<label><input type="radio" name="q5" value="D"> Zebra</label>
+<p id="r5"></p>
+
+<p>6. Which animal lives in water?</p>
+<label><input type="radio" name="q6" value="A"> Fish</label><br>
+<label><input type="radio" name="q6" value="B"> Lion</label><br>
+<label><input type="radio" name="q6" value="C"> Dog</label><br>
+<label><input type="radio" name="q6" value="D"> Horse</label>
+<p id="r6"></p>
+
+<p>7. Which animal has webbed feet?</p>
+<label><input type="radio" name="q7" value="A"> Cat</label><br>
+<label><input type="radio" name="q7" value="B"> Duck</label><br>
+<label><input type="radio" name="q7" value="C"> Cow</label><br>
+<label><input type="radio" name="q7" value="D"> Goat</label>
+<p id="r7"></p>
+
+<p>8. Which animal has a hump?</p>
+<label><input type="radio" name="q8" value="A"> Horse</label><br>
+<label><input type="radio" name="q8" value="B"> Camel</label><br>
+<label><input type="radio" name="q8" value="C"> Dog</label><br>
+<label><input type="radio" name="q8" value="D"> Tiger</label>
+<p id="r8"></p>
+
+<p>9. Which animal climbs trees easily?</p>
+<label><input type="radio" name="q9" value="A"> Elephant</label><br>
+<label><input type="radio" name="q9" value="B"> Monkey</label><br>
+<label><input type="radio" name="q9" value="C"> Cow</label><br>
+<label><input type="radio" name="q9" value="D"> Goat</label>
+<p id="r9"></p>
+
+<p>10. Which bird cannot fly?</p>
+<label><input type="radio" name="q10" value="A"> Crow</label><br>
+<label><input type="radio" name="q10" value="B"> Ostrich</label><br>
+<label><input type="radio" name="q10" value="C"> Parrot</label><br>
+<label><input type="radio" name="q10" value="D"> Sparrow</label>
+<p id="r10"></p>
+
+<p>11. Which animal has sharp claws?</p>
+<label><input type="radio" name="q11" value="A"> Cow</label><br>
+<label><input type="radio" name="q11" value="B"> Tiger</label><br>
+<label><input type="radio" name="q11" value="C"> Goat</label><br>
+<label><input type="radio" name="q11" value="D"> Horse</label>
+<p id="r11"></p>
+
+<p>12. Which animal lives in cold places?</p>
+<label><input type="radio" name="q12" value="A"> Elephant</label><br>
+<label><input type="radio" name="q12" value="B"> Polar Bear</label><br>
+<label><input type="radio" name="q12" value="C"> Lion</label><br>
+<label><input type="radio" name="q12" value="D"> Monkey</label>
+<p id="r12"></p>
+
+<p>13. Which animal uses echolocation?</p>
+<label><input type="radio" name="q13" value="A"> Cow</label><br>
+<label><input type="radio" name="q13" value="B"> Bat</label><br>
+<label><input type="radio" name="q13" value="C"> Dog</label><br>
+<label><input type="radio" name="q13" value="D"> Horse</label>
+<p id="r13"></p>
+
+<p>14. King of the jungle?</p>
+<label><input type="radio" name="q14" value="A"> Tiger</label><br>
+<label><input type="radio" name="q14" value="B"> Lion</label><br>
+<label><input type="radio" name="q14" value="C"> Dog</label><br>
+<label><input type="radio" name="q14" value="D"> Elephant</label>
+<p id="r14"></p>
+
+<p>15. Tallest animal?</p>
+<label><input type="radio" name="q15" value="A"> Cow</label><br>
+<label><input type="radio" name="q15" value="B"> Horse</label><br>
+<label><input type="radio" name="q15" value="C"> Giraffe</label><br>
+<label><input type="radio" name="q15" value="D"> Goat</label>
+<p id="r15"></p>
+
+<p>16. Which animal lays eggs?</p>
+<label><input type="radio" name="q16" value="A"> Dog</label><br>
+<label><input type="radio" name="q16" value="B"> Hen</label><br>
+<label><input type="radio" name="q16" value="C"> Cat</label><br>
+<label><input type="radio" name="q16" value="D"> Cow</label>
+<p id="r16"></p>
+
+<p>17. Which animal has stripes?</p>
+<label><input type="radio" name="q17" value="A"> Lion</label><br>
+<label><input type="radio" name="q17" value="B"> Zebra</label><br>
+<label><input type="radio" name="q17" value="C"> Elephant</label><br>
+<label><input type="radio" name="q17" value="D"> Goat</label>
+<p id="r17"></p>
+
+<p>18. Which animal jumps high?</p>
+<label><input type="radio" name="q18" value="A"> Cow</label><br>
+<label><input type="radio" name="q18" value="B"> Kangaroo</label><br>
+<label><input type="radio" name="q18" value="C"> Dog</label><br>
+<label><input type="radio" name="q18" value="D"> Goat</label>
+<p id="r18"></p>
+
+<p>19. Migration means:</p>
+<label><input type="radio" name="q19" value="A"> Sleeping</label><br>
+<label><input type="radio" name="q19" value="B"> Moving from one place to another</label><br>
+<label><input type="radio" name="q19" value="C"> Fighting</label><br>
+<label><input type="radio" name="q19" value="D"> Running</label>
+<p id="r19"></p>
+
+<p>20. Which bird migrates long distance?</p>
+<label><input type="radio" name="q20" value="A"> Crow</label><br>
+<label><input type="radio" name="q20" value="B"> Parrot</label><br>
+<label><input type="radio" name="q20" value="C"> Siberian Crane</label><br>
+<label><input type="radio" name="q20" value="D"> Hen</label>
+<p id="r20"></p>
+
+<p>21. Why animals migrate?</p>
+<label><input type="radio" name="q21" value="A"> Playing</label><br>
+<label><input type="radio" name="q21" value="B"> Food & weather</label><br>
+<label><input type="radio" name="q21" value="C"> Sleeping</label><br>
+<label><input type="radio" name="q21" value="D"> Fighting</label>
+<p id="r21"></p>
+
+<button type="button" onclick="check()">Submit Quiz</button>
+
+<h3 id="score"></h3>
+
+</form>
+</div>
+
+<script>
+
+let answers={
+q1:"B",q2:"B",q3:"A",q4:"C",q5:"B",
+q6:"A",q7:"B",q8:"B",q9:"B",q10:"B",
+q11:"B",q12:"B",q13:"B",q14:"B",q15:"C",
+q16:"B",q17:"B",q18:"B",q19:"B",q20:"C",q21:"B"
+};
+
+function check(){
+let score=0;
+
+for(let q in answers){
+
+let selected=document.querySelector('input[name="'+q+'"]:checked');
+
+if(selected){
+
+if(selected.value===answers[q]){
+
+document.getElementById("r"+q.substring(1)).innerHTML="✔ Correct";
+document.getElementById("r"+q.substring(1)).className="correct";
+score++;
+
+}else{
+
+document.getElementById("r"+q.substring(1)).innerHTML="✘ Wrong (Correct: "+answers[q]+")";
+document.getElementById("r"+q.substring(1)).className="wrong";
+
+}
+
+}
+
+}
+
+document.getElementById("score").innerHTML="Your Score: "+score+"/21";
+
+}
+
+</script>
+
+</body>
+</html>
